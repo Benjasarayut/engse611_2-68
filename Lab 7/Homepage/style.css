@@ -1,0 +1,126 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  padding-right: 250px;
+  /* เว้นที่ว่างสำหรับ sidebar */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 190px; /* เพิ่ม margin-top เพื่อเลื่อนตารางลงมา */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f8ff;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.sidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #e0e0e0;
+}
+.container .header-content {
+  display: flex;
+  align-items: center;
+}
+
+.container .header-content img {
+  margin-right: 20px;
+}
+
+.image {
+  width: 80%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+  display: block;
+  margin: 200px auto;
+  margin-top: 30px; /* เพิ่ม margin-top เพื่อเพิ่มระยะห่าง */
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.image.azoom {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .content {
+    padding: 10px;
+    padding-right: 10px;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+}

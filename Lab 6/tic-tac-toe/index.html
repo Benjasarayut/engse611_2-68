@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Haru XO Game</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>HARU XO</h1>
+    
+    <div class="game-mode">
+        <select id="mode">
+            <option value="2P">2 Players</option>
+            <option value="easy">AI (Easy)</option>
+            <option value="medium">AI (Medium)</option>
+            <option value="hard">AI (Hard)</option>
+        </select>
+    </div>
+
+    <div class="display">
+        It's <span class="current-player">X</span>'s turn
+    </div>
+
+    <div class="scoreboard">
+        <div id="scoreX">Player X: 0</div>
+        <div id="scoreO">Player O: 0</div>
+    </div>
+
+    <div class="game-grid">
+        <div class="tile" data-index="0"></div>
+        <div class="tile" data-index="1"></div>
+        <div class="tile" data-index="2"></div>
+        <div class="tile" data-index="3"></div>
+        <div class="tile" data-index="4"></div>
+        <div class="tile" data-index="5"></div>
+        <div class="tile" data-index="6"></div>
+        <div class="tile" data-index="7"></div>
+        <div class="tile" data-index="8"></div>
+    </div>
+
+    <div class="result hide"></div>
+
+    <div class="button-container">
+        <button id="newGame">New Game</button>
+        <button id="reset">Reset</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

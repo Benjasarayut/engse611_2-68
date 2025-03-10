@@ -1,0 +1,109 @@
+body {
+  background-color: #fc96fcfa;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #7ed2f3;
+  color: #d41818;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #c75b7a;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease-in-out;
+  /* เพิ่ม transition */
+}
+
+li:hover {
+  background-color: #f9f9f9;
+  /* เปลี่ยนสีเมื่อ hover */
+}
+
+li span {
+  flex-grow: 1;
+  margin-right: 10px;
+  color: #333;
+}
+
+li button {
+  background-color: #d85c5b;
+  color: #921a40;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+li button:hover {
+  background-color: #c0392b;
+}
+
+li.completed {
+  background-color: #ecf0f1;
+}
+
+li.completed span {
+  color: #888;
+  text-decoration: line-through;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+  accent-color: #c75b7a;
+  transition: accent-color 0.3s ease-in-out;
+  /* เพิ่ม transition */
+}
+
+li input[type="checkbox"]:checked {
+  accent-color: #921a40;
+  /* เปลี่ยนสี checkbox เมื่อถูกเลือก */
+}
